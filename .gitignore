@@ -1,0 +1,8 @@
+# Node Modules (para ambos)
+node_modules/
+
+# Builds (frontend)
+frontend/dist/
+
+# Variables de entorno (backend)
+backend/.env
