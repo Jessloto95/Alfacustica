@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from '../Header/Header'
+import Hero from '../Hero/Hero';
 import './App.css'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className='App'>
       <Header />
       <main>
-        <h1>Bienvenido a Alfacustica </h1>
+        <Hero />
       </main>
     </div>
   );

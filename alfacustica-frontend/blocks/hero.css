@@ -1,0 +1,36 @@
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter-Regular;
+    background: linear-gradient(rgba(190, 77, 9, 0.8), rgba(0, 104,167, 0.8)),
+    url('../src/images/NETFLIX\ 3\ .jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    font-family: Inter-Regular;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top:  20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: white;
+    color: rgb(0, 104, 167);
+}
