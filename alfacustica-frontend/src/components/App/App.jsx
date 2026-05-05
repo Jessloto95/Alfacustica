@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Header from '../Header/Header'
 import Hero from '../Hero/Hero';
 import Services from '../Services/Services';
-import './App.css'
+import Porfolio from '../Portfolio/Portfolio';
+
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <Porfolio />
       </main>
     </div>
   );

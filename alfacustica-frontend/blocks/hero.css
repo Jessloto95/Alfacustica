@@ -1,15 +1,37 @@
 .hero {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
     font-family: Inter-Regular;
     background: linear-gradient(rgba(190, 77, 9, 0.8), rgba(0, 104,167, 0.8)),
     url('../src/images/Netflix-3.jpg');
   background-size: cover;
   background-position: center;
   color: white;
+}
+
+.custom-shape-divider-bottom-hero {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-hero svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-hero .shape-fill-hero {
+    fill: #f8f9fa;
 }
 
 .hero-content h1 {

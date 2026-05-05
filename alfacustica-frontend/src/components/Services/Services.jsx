@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import "../../../blocks/services.css";
+
 import imgAislamiento from "../../images/novo-hotel.jpg";
 import imgAcondicionamiento from "../../images/Netflix-4.jpg";
 import imgConsultoria from "../../images/Consultoria-acustica.jpg";
@@ -47,6 +47,13 @@ export default function Services() {
                     image={service.image}
                     />
                 ))}
+            </div>
+
+            <div className="custom-shape-divider-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C480,120 720,120 1200,0 L1200,120 L0,120 Z" className="shape-fill">
+                </path>
+                </svg>
             </div>
         </section>
     );

@@ -14,6 +14,12 @@ export default function Hero() {
             <p>Soluciones avanzadas en aislamiento y acondicionamiento para espacios comerciales e industriales.</p>
             <button className="cta-button">Cotizar Proyecto</button>
             </motion.div>
+
+            <div className="custom-shape-divider-bottom-hero">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C480,120 720,120 1200,0 L1200,120 L0,120 Z" className="shape-fill-hero"></path>
+                </svg>
+           </div>
         </section>
     );
 }
