@@ -3,7 +3,9 @@ import ServiceCard from "./ServiceCard";
 import imgAislamiento from "../../images/novo-hotel.jpg";
 import imgAcondicionamiento from "../../images/Netflix-4.jpg";
 import imgConsultoria from "../../images/Consultoria-acustica.jpg";
-import imgKinetics from "../../images/Kinetics.jpg";
+import imgKinetics from "../../images/Kinetics2.jpg";
+import imgMedicionAcu from "../../images/Medicion-Acustica.jpg";
+import imgAltavozInvi from "../../images/Altavoz-Invisible.jpg";
 
 
 const servicesData = [
@@ -30,7 +32,19 @@ const servicesData = [
         title: "Kinetics Noise Control", 
         description: "Soluciones de control de ruido y vibraciones de alta precisión para proyectos industriales.",
         image: imgKinetics
-    }
+    },
+       { 
+        id: 5,
+        title: "Auditoría acústica in situ", 
+        description: "Medicion profesional con Bruel & Kjær 2270 y analisis de bandas 1/3 de octava.",
+        image: imgMedicionAcu
+    },
+    { 
+        id: 6,
+        title: "Altavoces DML ocultos Invibe", 
+        description: "Diseño e instalación de altavoces planos Distributed Mode Loudspeaker, que hacen vibrar todo el panel para generar sonido uniforme e invisible, integrandose en muros o plafones sin alterar la estética del espacio.",
+        image: imgAltavozInvi
+    },
 ];
 
 export default function Services() {

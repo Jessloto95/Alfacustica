@@ -2,10 +2,24 @@ import { motion } from "framer-motion";
 
 import projNetflix from "../../images/Netflix-4.jpg";
 import projNovoHotel from "../../images/novo-hotel.jpg";
+import projIyuno from "../../images/Oficinas-Iyuno.jpg";
+import projSoleil from "../../images/Soleil .jpg";
+import projCineAca from "../../images/Cine-Acapulco.jpg";
+import projUnifin from "../../images/Unifin.jpg";
+import projCineCond from "../../images/Cine-Condado .jpg";
+import projSimGolf from "../../images/Simulador-de-golf .jpg";
+import projCinePale from "../../images/Cine-Palermo.jpg";
 
 const projects = [
     { id: 1, title: "Netflix Offices", category: "Acondicionamineto", img: projNetflix},
-    { id: 2, title: "Novo-Hotel", category:"Aislamiento", img: projNovoHotel}
+    { id: 2, title: "Novo-Hotel", category:"Aislamiento", img: projNovoHotel},
+     { id: 3, title: "Iyuno Offices", category: "Acondicionamineto", img: projIyuno},
+     { id: 4, title: " Edificio Soleil", category:"Aislamiento", img: projSoleil},
+     { id: 5, title: " Cine Acapulco ", category:"Aislamiento", img: projCineAca},
+     { id: 6, title: "Oficinas Unifin ", category:"Aislamiento", img: projUnifin},
+     { id: 7, title: "Cine Condado ", category:"Diseño-Home Cinema", img: projCineCond},
+     { id: 8, title: "Simulador de Golf ", category:"Domotica", img: projSimGolf},
+     { id: 9, title: "Cine Palermo", category:"Diseño-Home Cinema", img: projCinePale},
 ];
 
 export default function Porfolio() {
