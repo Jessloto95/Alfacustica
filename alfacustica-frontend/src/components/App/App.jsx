@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import Hero from '../Hero/Hero';
 import Services from '../Services/Services';
 import Porfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Services />
         <Porfolio />
+        <Contact />
       </main>
     </div>
   );
