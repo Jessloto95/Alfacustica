@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero';
 import Services from '../Services/Services';
 import Porfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Porfolio />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

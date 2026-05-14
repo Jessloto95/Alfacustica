@@ -10,9 +10,7 @@ export default function Contact() {
                     <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte con soluciones acústicas integrales</p>
 
                     <div className="info-items-container">
-                    <div className="info-item">
-                        <strong>Ubicación:</strong> Ciudad de Mexico
-                    </div>
+                
                     <div className="info-item">
                         <strong>Email:</strong> contacto@alfacustica.com
                     </div>
