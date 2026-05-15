@@ -9,6 +9,7 @@ import projUnifin from "../../images/Unifin.jpg";
 import projCineCond from "../../images/Cine-Condado .jpg";
 import projSimGolf from "../../images/Simulador-de-golf .jpg";
 import projCinePale from "../../images/Cine-Palermo.jpg";
+import titleAnomatedIcon from "../../images/1761176510548186.gif";
 
 const projects = [
     { id: 1, title: "Netflix Offices", category: "Acondicionamineto", img: projNetflix},
@@ -26,7 +27,10 @@ export default function Porfolio() {
     return (
         <section id="projects" className="portfolio">
             <div className="portfolio-header">
+                <div className="title-animated-container">
+                    <img src={titleAnomatedIcon} alt="decoración" className="title-animated-icon" />
             <h2>Proyectos Destacados</h2>
+            </div>
             <p>Experiencia técnica aplicada en sectores corporativos e industriales.</p>
             </div>
 

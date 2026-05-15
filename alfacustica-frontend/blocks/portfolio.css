@@ -10,8 +10,23 @@
     font-family: Inter-Regular;
 }
 
+.title-animated-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.title-animated-icon {
+    height: 50px;
+    width: auto;
+}
+
+
 .portfolio-header h2, .portfolio-header p {
   color: #ffffff;
+  margin: 0;
 }
 
 .portfolio-grid {

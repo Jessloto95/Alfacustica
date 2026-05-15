@@ -1,25 +1,27 @@
 import { motion } from "framer-motion";
+import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Contact() {
     return (
         <section id="contact" className="contact">
             <div className="contact-container">
-                <div className="contact-info">
-                    <div className="contact-blob-wrapper">
-                    <h2>Contacto</h2>
-                    <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte con soluciones acústicas integrales</p>
 
-                    <div className="info-items-container">
-                
-                    <div className="info-item">
-                        <strong>Email:</strong> contacto@alfacustica.com
+                <div className="contact-text-block">
+                    <h2>Estamos para escucharte.</h2>
+                    <p>Platícanos tu proyecto. Nuestro equipo técnico te contactará para ofrecerte la solución acústica ideal.</p>
+
+                    <div className="contact-details-clean">
+                        <div className="detail-item-clean">
+                            <FaMapMarkerAlt /> <span>Ciudad de México y Monterrey</span>
+                        </div>
+                        <div className="detail-item-clean">
+                            <FaEnvelope /> <span>contacto@alfacustica.com</span>
+                        </div>
                     </div>
-                    </div>
-                    </div>
-                    {/* insertar un iframe de Google Maps después */}
                 </div>
+
                 <motion.form 
-                className="contact-form"
+                className="contact-form-clean"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -33,7 +35,7 @@ export default function Contact() {
                         <option value="kinetics">Kinetics Noise Control</option>
                     </select>
                     <textarea placeholder="Cuéntanos sobre tu proyecto..." rows="5" required></textarea>
-                    <button type="submit" className="submit-btn">Enviar Mensaje</button>
+                    <button type="submit" className="submit-btn-clean">Enviar Mensaje</button>
                 </motion.form>
             </div>
         </section>
