@@ -41,6 +41,37 @@
     text-align: center;
 }
 
+.services-titles h2 {
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    /*text-transform: uppercase;*/
+    letter-spacing: 1px;
+    color: rgb(0, 104, 167);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.services-titles h2::after {
+    content: '';
+    display: block;
+    width: 620px;
+    height: 3px;
+    background-color: rgb(255, 204, 0); 
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.services-titles p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 600px;
+    margin: 15px auto 40px;
+    opacity: 0.9;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

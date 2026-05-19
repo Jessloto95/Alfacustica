@@ -6,7 +6,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    font-family: Inter-Regular;
+    font-family: Inter-Regular, sans-serif;
     background: linear-gradient(rgba(190, 77, 9, 0.8), rgba(0, 104,167, 0.8)),
     url('../src/images/Netflix-3.jpg');
   background-size: cover;
@@ -35,9 +35,28 @@
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-family:  Inter-Regular, sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    /*text-transform: uppercase;*/
+    letter-spacing: -1px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, #ffffff 50%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
 
 .cta-button {
     font-family: Inter-Regular;

@@ -28,7 +28,13 @@ export default function Porfolio() {
         <section id="projects" className="portfolio">
             <div className="portfolio-header">
                 <div className="title-animated-container">
-                    <img src={titleAnomatedIcon} alt="decoración" className="title-animated-icon" />
+
+                    <div className="gif-crop-wrapper">
+                        <img src={titleAnomatedIcon} 
+                        alt="decoración" 
+                        className="title-animated-icon"
+                        />
+                    </div>
             <h2>Proyectos Destacados</h2>
             </div>
             <p>Experiencia técnica aplicada en sectores corporativos e industriales.</p>

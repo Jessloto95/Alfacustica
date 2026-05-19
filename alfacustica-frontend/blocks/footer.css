@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgb(0, 104, 167);
+    background-color: #000000;
     color: white;
     padding: 60px 5% 20px;
     font-family: "Inter-Regular", sans-serif;
@@ -34,7 +34,7 @@
     gap: 10px;
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #ffcc00;   
+    color: rgba(190, 77, 9, 0.8);   
 }
 
 .footer-location p {

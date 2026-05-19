@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import bgContact from "../../images/Netflix-cabina2.jpg";
 
 export default function Contact() {
     return (
-        <section id="contact" className="contact">
+        <section id="contact" className="contact"
+        style={{
+            backgroundImage: `linear-gradient(135deg, rgba(0, 48, 80, 0.9) 0%, rgba(0, 104, 167, 0.9) 100%), url(${bgContact})`
+        }}
+        >
             <div className="contact-container">
 
                 <div className="contact-text-block">
