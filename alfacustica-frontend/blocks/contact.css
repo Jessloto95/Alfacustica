@@ -92,6 +92,17 @@
     gap: 20px;
 }
 
+.contact-form-clean select option {
+    background-color: rgb(0, 48, 80);
+    color: #ffffff;
+    font-family: "Inter-Regular", sans-serif;
+    padding: 10px;
+}
+
+.contact-form-clean select {
+    cursor: pointer;
+}
+
 .contact-form-clean input,
 .contact-form-clean select,
 .contact-form-clean textarea {

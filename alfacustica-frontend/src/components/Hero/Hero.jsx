@@ -2,8 +2,16 @@ import { motion } from "framer-motion";
 
 
 export default function Hero() {
+
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth"});
+        }
+    };
+
     return (
-        <section className="hero">
+        <section  id="home" className="hero">
             <motion.div 
             className="hero-content"
             initial={{ opacity: 0, y: 30 }}
@@ -12,7 +20,7 @@ export default function Hero() {
             > 
             <h1>Ingeniería Acústica de Precisión</h1>
             <p>Soluciones avanzadas en aislamiento y acondicionamiento para espacios comerciales e industriales.</p>
-            <button className="cta-button">Cotizar Proyecto</button>
+            <button className="cta-button" onClick={handleScrollToContact}>Cotizar Proyecto</button>
             </motion.div>
 
             <div className="custom-shape-divider-bottom-hero">
