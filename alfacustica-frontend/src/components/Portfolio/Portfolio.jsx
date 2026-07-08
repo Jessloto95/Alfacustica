@@ -65,23 +65,7 @@ const projects = [
   },
 ];
 
-export default function Porfolio() {
-const [projectImages, setProjectImages] = useState([]);
-
-useEffect(() => {
-  async function loadImages() {
-    try {
-      const images = await getProjectImages();
-
-      setProjectImages(images);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  loadImages();
-}, []);
-
+export default function Porfolio({ projectImages = [], loading}) {
 
   return (
     <section id="projects" className="portfolio">
@@ -101,21 +85,31 @@ useEffect(() => {
         </p>
       </div>
 
+      {loading ? (
+        <div className="preloader-container">
+          <div className="spinner"></div>
+          <p>Cargando portafolio corporativo...</p>
+        </div>
+      ) : (
       <div className="portfolio-grid">
-        {projectImages.map((project) => (
+        {projectImages.map((project) => {
+          if (!project || !project.src) return null;
+          return (
           <motion.div
             key={project.id}
             className="portfolio-item"
             whileHover={{ opacity: 0.9, scale: 0.98 }}
           >
-            <img src={project.src.original} alt={project.title} />
+            <img src={project.src.original} alt={project.alt || 'Proyecto'} />
             <div className="portfolio-overlay">
-              <h3>{project.photographer}</h3>
+              <h3>{project.photographer || 'Proyecto Arquitectónico'}</h3>
               <span>{project.category}</span>
             </div>
           </motion.div>
-        ))}
+          );
+        })}
       </div>
+       )}
     </section>
   );
 }
